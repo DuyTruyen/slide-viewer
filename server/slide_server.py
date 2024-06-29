@@ -20,7 +20,7 @@ CORS(app, resources={r"/*": {"origins": "*"}})
 TILE_SIZE = 256
 OVERLAP = 0
 
-folder_upload_path = r"D:\Work\Mesoco\slide-viewer\upload"
+folder_upload_path = r"D:\Work\Mesoco\test\slide-viewer\upload"
 
 @app.route('/slide/<string:slidename>/<int:level>/<int:col>_<int:row>.jpeg')
 def get_tile(slidename, level, col, row):
