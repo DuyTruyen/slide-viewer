@@ -1,0 +1,30 @@
+<h1 class="text-center my-3">Slide Viewer</h1>
+<div class="container-fluid my-3">
+  <div class="row">
+    <div class="col-1">
+      <div class="toolbar">
+        <div class="h3">Toolbar</div>
+      </div>
+    </div>
+    <div class="col-11">
+      <div class="row">
+        <div class="col-lg-10 mb-3">
+          <div class="border" id="openseadragon-viewer" style="width: 100%; height: 600px;"></div>
+        </div>
+        <div class="col-lg-2  p-3">
+          <!-- <div class="h3">Slide Data</div> -->
+          <div id="slideData" class="d-flex align-items-center justify-content-center">
+            <div class="spinner-border text-primary" role="status">
+              Slide: {{slideData?.slidename}}<br>
+              Scanner: {{slideData?.scanner}}<br>
+              Kích thước slide: {{slideData?.dimensions[0]}} x {{slideData?.dimensions[1]}}<br>
+              TileSize: {{slideData?.tile_size}}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+</div>
